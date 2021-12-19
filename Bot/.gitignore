@@ -1,5 +1,7 @@
 *.session
 config.ini
+config.py
 BittoCheat_logo.png
 BittoCheat_logo1.png
 BittoCheat_logo1.kra
+__pycache__

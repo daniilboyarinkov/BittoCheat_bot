@@ -1,7 +1,7 @@
 def get_random_language():
     import json
     from random import randint
-    with open("../Bot/Links/languages_linksn.json", "r") as f:
+    with open("Bot/Links/languages_linksn.json", "r") as f:
         data = json.load(f)
         max_number = len(data["links"])+1
         r = randint(0, max_number)

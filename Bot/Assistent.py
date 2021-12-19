@@ -21,11 +21,6 @@ def send_me_log(message):
     ml_url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={ML_CHAT_ID}&disable_notification=true&parse_mode=HTML&text={message}"
     my_response = requests.get(my_url)
     ml_response = requests.get(ml_url)
-    with open("./Logs/logs.json", "a+") as logs:
-        logs.seek(logs.truncate(logs.tell()-2))
-        logs.write(f",\n")
-        json.dump(my_response.json(), logs)
-        logs.write("]}")
     return
 
 

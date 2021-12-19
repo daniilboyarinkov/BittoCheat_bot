@@ -34,7 +34,7 @@ def html_to_json(category):
 def get_quote(category):
     from random import randint
     import json
-    with open(f"../Parser/Sources/JSONS/{category}.json", "r", encoding="utf-8") as file:
+    with open(f"Parser/Sources/JSONS/{category}.json", "r", encoding="utf-8") as file:
         data = json.load(file)
         max_number = len(data["quotes"])
         random_quote = data["quotes"][randint(0, max_number+1)]
